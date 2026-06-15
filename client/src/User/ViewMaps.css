@@ -1,0 +1,151 @@
+/* Marker Styling */
+.custom-marker {
+  cursor: pointer;
+  font-size: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.custom-marker:hover {
+  transform: scale(1.2);
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 75vh;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Glass Cards */
+.parking-card {
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+.parking-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Search Box */
+.search-box {
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #334155;
+  border-top: 4px solid #10b981;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Info Window Styling */
+.gm-style .gm-style-iw-c {
+  border-radius: 16px !important;
+  padding: 0 !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+.gm-style .gm-ui-hover-effect {
+  top: 5px !important;
+  right: 5px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-container {
+    height: 60vh;
+  }
+
+  .custom-marker {
+    font-size: 22px;
+  }
+}
+
+/* Smooth Animations */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Fancy Fade In */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional Dashboard Effects */
+.dashboard-card {
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(16, 185, 129, 0.15);
+}
+
+/* Search Input Glow */
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+}
+
+/* Map Card */
+.map-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  background: #0f172a;
+}
+
+/* Status Cards */
+.stats-card {
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  border-color: #10b981;
+  transform: translateY(-4px);
+}
