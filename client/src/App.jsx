@@ -6,7 +6,7 @@ import UserLogin from "./Authorization/UserLogin";
 import UserRegistration from "./Authorization/UserRegistration";
 import Navbar from "./Lender/Navbar";
 import LenderHome from "./Lender/LenderHome";
-import AddParkingPlace from "./Lender/AddparkingPlace";
+import AddParkingPlace from "./Lender/AddParkingPlace";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ViewBookings from "./Lender/ViewBookings";
